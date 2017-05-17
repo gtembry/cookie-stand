@@ -31,7 +31,7 @@ function listStore() {
 }
 for (var i=0; i < 15; i++) {
 }
-}
+};
 
 
 
