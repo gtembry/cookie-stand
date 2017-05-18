@@ -26,11 +26,15 @@ function buildHeader(){
     console.log('hourCell', hourCell);
     //sets specific index of hours as innerHTML of the previously created hourCell
     hourCell.innerHTML = hours[i];
+    //append hourCell to hoursRow as child element
+    hoursRow.appendChild(hourCell);
   }
+
 }
 
 buildHeader();
 
+// renderHeader();
 function renderTable(){
   var table = document.getElementById('shell');
   console.log('table', table);
