@@ -1,45 +1,12 @@
 /* base styles */
-body {
-  font-family: helvetica;
+html {
+  background-color: orange;
 }
-
-fieldset {
-  padding: 20px;
+h1 {
+  font-family: fantasy;
+  font-size: 30px;
 }
-
-input[type="text"] {
-  padding: 7px;
-  margin-left: 7px;
-  border: solid 1px #000;
-  border-radius: 3px;
-}
-
-input[type="text"]:focus {
-  background: #000;
-  color: #fff;
-}
-
-button {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  border: none;
-  padding: 8px 18px;
-  background: #000;
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-table {
-  margin-left: 20px;
-}
-
-thead {
-  background: #888;
-}
-
-td {
-  padding: 20px;
-  border: solid 1px #000;
+h2 {
+  font-style: oblique;
+  font-family: monospace;
 }
