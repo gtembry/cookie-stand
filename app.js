@@ -1,7 +1,7 @@
 'use strict';
 //global variables
 var stores = [pike, seatac, sCenter, capHill, alki];
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
 
 function Store(name, minCust, maxCust, avgSale) {
   this.name = name; // dynamic name property
@@ -36,12 +36,19 @@ Store.prototype.renderTable = function() {
   var table = document.getElementById('shell');
   console.log('table', table);
   var data = [];
-
-  for (var i = 0; i < hours.length; i++) {
+  var total = 0;
+  for (var i = 0; i < 15; i++) {
+    var number = randomNumGen(this.minCust, this.maxCust, this.avgSale);
     data.push(
-      '<td>' + randomNumGen(this.minCust, this.maxCust, this.avgSale) + '</td>'
+      '<td>' + number + '</td>'
     );
+    total = total + number;
+    console.log(total, 'total');
   }
+  data.push(
+    '<td>' + total + '</td>'
+  );
+
   var storeRow = document.createElement('tr');
   console.log('storeRow', storeRow);
   storeRow.innerHTML = data.join('');
