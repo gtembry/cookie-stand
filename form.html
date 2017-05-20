@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cookie form</title>
+  <head><link rel="stylesheet" type="text/css" href="style.css">
+    <title>Salmon_form</title>
   </head>
   <body>
-    <form class="stuff" action="index.html" method="post">
-      <input type="text" name="store" value="sales">
+    <table>
+      <tbody id ="shell">
+      </tbody>
+    </table>
+    <form id="sample_form">
+
+      <fieldset>
+        <label for="store">Store:</label>
+        <input type="text" name="Store" placeholder="Enter a Store location" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="Min">Minimum:</label>
+        <input type="text" name="Minimum" placeholder="Enter number" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="Max">Maximum:</label>
+        <input type="text" name="Maximum" placeholder="Enter a number" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="Avg">Avg Cookie Sales:</label>
+        <input type="text" name="Avg" placeholder="Enter a number" required>
+      </fieldset>
+
+      <button id="submit-btn" type="submit">ADD A STORE</button>
     </form>
+    <script src="app.js"></script>
   </body>
 </html>
