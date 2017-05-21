@@ -1,17 +1,65 @@
 body {
+  font-family: fantasy;
   background-color: #FFF5AB;
-
 }
 
+.clearfix {
+  clear: both;
+}
 
-thead {
+header {
   background: #C6BBFF;
-  font-size: 15px
-
-
+  color: #E82C0C;
+  height: 175px;
+}
+header div {
+  width: 700px;
+  margin: 0 auto;
 }
 
-td {
-  padding: 20px;
-  border: solid 1px black;
+.cornerPic {
+position: relative
+top: -20px;
+float: right;
+}
+.mainPic {
+  display: inline-block;
+  margin-left: 260px;
+}
+.familyPic{
+}
+
+
+nav ul li {
+  display: inline-block;
+  margin-right: 60px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+.sub-banners {
+  margin-top: 30px;
+}
+
+.sub-banners li {
+float: left;
+margin-right: 30px;
+}
+
+h1 {
+  font-style: oblique;
+  font-size: 40px;
+  margin-left: 420px;
+}
+
+p {
+  font-family: fantasy;
+  margin-bottom: 30px;
+}
+
+h2{
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-right: 30px;
 }
