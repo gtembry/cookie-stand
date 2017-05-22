@@ -31,7 +31,6 @@ function buildHeader(){
 }
 buildHeader();
 
-// renderHeader();
 Store.prototype.renderTable = function() {
   var table = document.getElementById('shell');
   console.log('table', table);
@@ -76,7 +75,6 @@ alki.renderTable();
 var form = document.getElementById('sample_form');
 var table = document.getElementById('shell');
 
-// var data = [];
 
 function formData(event){
   event.preventDefault();
@@ -89,20 +87,6 @@ function formData(event){
   var formStore = new Store(store, minCust, maxCust, avgSale);
   formStore.renderTable();
   formStore.hoursRow();
-  // createTable();
   form.reset();
 }
-// function createTable() {
-//   var row;
-//   for (var i = 0; i < data.length; i++) {
-//     row = document.createElement('tr');
-//     row.innerHTML = '<td>' + data[i].store + '</td>' +
-//       '<td>' + data[i].minCust + '</td>' +
-//       '<td>' + data[i].maxCust + '</td>' +
-//       '<td>' + data[i].avgSale + '</td>';
-//   }
-//
-//   table.appendChild(row);
-// }
-
 form.addEventListener('submit', formData);
